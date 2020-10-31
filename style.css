@@ -64,7 +64,7 @@ span {
 	margin-right: 25%;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 5px;
 	box-sizing: border-box;
 	/*padding: 30px 0;*/
 	font-weight: 300;
@@ -79,7 +79,7 @@ span {
 	margin-right: 25%;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 5px;
 	box-sizing: border-box;
 	/*padding: 30px 0;*/
 	font-weight: 300;
@@ -95,7 +95,7 @@ span {
 	margin-right: 25%;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 5px;
 	box-sizing: border-box;
 	/*padding: 30px 0;*/
 	font-weight: 300;
@@ -103,24 +103,26 @@ span {
 }
 
 .picture {
-	border-radius: 2px;
+	padding: 0 15px;
+	border-radius: 5px;
 	height: 55px;
 	/*float: right; 
-	float: left; *//* Выравнивание по левому краю */
+	float: left;  Выравнивание по левому краю */
 	position:absolute;
-	left:1100px;
-	right:100px
+	/*left:1100px;*/
+	right:24%
 }
 
 .artistName {
-	margin-left: 15%; 
+	margin-left: 20%; 
 	font-family: 'Montserrat', Bold; /* Шрифт с засечками */
     font-style: bold;
     font-size: 80%; 
     position:absolute;
     left:100px;
 	right:100px
-	white-space: normal;
+/*	white-space: pre-line;*/
+
 }
 
 .songName {
@@ -131,7 +133,9 @@ span {
     font-size: 80%; 
     position:absolute;
     left:-0px;
-	right:100px
+	right:100px;
+	overflow-x:hidden;
+	word-break: break-all;
 }
 
 .number {

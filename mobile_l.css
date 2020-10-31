@@ -1,0 +1,9 @@
+.picture {
+	border-radius: 5px;
+	height: 55px;
+	/*float: right; 
+	float: left; *//* Выравнивание по левому краю */
+	position:absolute;
+	/*left:372px;*/
+	right:23%
+}
