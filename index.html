@@ -1,74 +1,711 @@
-<!DOCTYPE html>
 <html>
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ace Stream</title>
-
-<style type="text/css">
-* {
-    font-family: Arial;
-}
-body {
-    background-color: #222
-}
-</style>
-
-<!-- black style -->
-<link type="text/css" rel="stylesheet" href="http://static.torrentstream.org/jsapi/css/ts-controls-black.css" />
-
-<!-- api files -->
-<script src="http://static.acestream.net/jsapi-beta/js/lib/ts/core.js"></script>
-<script src="http://static.acestream.net/jsapi-beta/js/lib/jquery/jquery-1.7.min.js"></script>
-<script src="http://static.acestream.net/jsapi-beta/js/lib/ts/player.js"></script>
-<script src="http://static.acestream.net/jsapi-beta/js/lib/ts/controls.js"></script>
-
-<script type="text/javascript">
-function init() {
-    var controls = new TorrentStream.Controls("tsplayer", {
-            style: "internal",
-            debug: true
-    });
-
-    try {
-        var player = new TorrentStream.Player(controls.getPluginContainer(), {
-                debug: true,
-                useInternalControls: true,
-                bgColor: "#000000",
-                fontColor: "#ffffff",
-                onLoad: function() {
-                    this.registerEventHandler(controls);
-                    controls.attachPlayer(this);
-                    try {
-                        var p = this;
-                        this.loadPlayer("acestream://e2fc05323adf7e770dca7a98e99aa7f01b3bfede", {autoplay: false});
-                    }
-                    catch(e) {
-                        console.log("init: " + e);
-                    }
-                }
-        });
-    }
-    catch(e) {
-        console.log(e);
-        controls.onSystemMessage(e);
-    }
-}
-</script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>MIDDLE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 850px)" href="mobile.css">
 </head>
-
 <body>
-
-    <div id="player_container" style="background-color: #000; width: 800px; height: 483px; margin: 100px auto 0 auto;">
-        <div id="tsplayer" style="width: 100%; height: 100%; color: #fff; text-align: center;">
-            <div style="padding-top: 232px; background-color: #000000;">Подождите, идет загрузка плеера...</div>
-        </div>
+    <!-- Верхнее Лого  -->
+    <div class="logo">
+        <img src="img/LOGO_MIDDLE_HALLOWEN.png" height="80px" alt="Лого" class="logocenter">
     </div>
 
-    <script type="text/javascript">
-    init();
-    </script>
+    <!-- Первая песня  -->
+    <div class="song">
+        <div class="first_song align_center">
+           <div class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="firstNumber">1</h1>
+                  <span class="artistName">Slava Marlow</span>
+                  
+                  <h6 class="songName"><nobr>«Снова я напиваюсь»</nobr></h6>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+                    </div>  
+            </div>
+        </div>
+       </a>
+    </div>
+    </div>
 
+
+
+    <!-- Вторая песня -->
+    <div class="song">
+        <div class="second_song align_center">
+           <div class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">2</h1>
+                  <span class="artistName">GeeGun, Timati, Egor Kreed</span>
+                  <h6 class="songName">«Rolls Royce»</h6>
+                  <img src="img/song2.jpg" alt="Первая команда" class="picture team_logo logo_left">
+                </div>
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+    <!-- 3я песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <div class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">3</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+                </div>
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 4 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">4</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 5 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">5</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 6 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">6</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 7 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">7</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 8 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">8</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 9 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">9</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 10 я песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">10</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 11я песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">11</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 12 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">12</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 13 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">13</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 14 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">14</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 15 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">15</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 16 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">16</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 18 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">17</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 19 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">19</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 20 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">20</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 21 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">21</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 22 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">22</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 23 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">23</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 24 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">24</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 25 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">25</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 26 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">26</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 27 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">27</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 28 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">28</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 29 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">29</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 30 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">30</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 31 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">31</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 32 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">32</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 33 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">33</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 34 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">34</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 35 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">35</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 36 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">36</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 37 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">37</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 38 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">38</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 39 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">39</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- 40 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">40</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+
+    <!-- 41 песня -->
+    <div class="song">
+        <div class="song_block align_center">
+           <a href="20southgempton-ttnhm.html" class="match_a align_center">
+             <div class="right">
+                <div class="align_center team_m">
+                   <h1 class="number">41</h1>
+                  <span class="artistName">Автор</span>
+                  <span class="songName">Песня</span>
+                  <img src="img/song1.jpg" alt="Первая команда" class="picture team_logo logo_left">
+        </div>
+        </div>
+       </a>
+    </div>
+    </div>
+
+
+    <!-- <footer>
+    <div class="top_footer align_center">
+        <div class="logo_g"><img src="img/logo_white.png" alt="Logo" class="logo_green"></div>
+        <div class="link">
+            <a href="/about" class="foot_a">Телеграм</a>
+            <a href="/dmca" class="foot_a">ВК</a>
+            <a href="/ads" class="foot_a">Реклама на сайте</a>
+        </div> 
+    </div>
+    <div class="bot_footer">© Mustar – Главный мировой чарт :)</div>
+</footer> -->
 </body>
 </html>
