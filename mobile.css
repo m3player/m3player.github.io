@@ -2,6 +2,8 @@ html {
 	overflow-x: hidden;
 }
 
+footer {text-align: center;}
+
 .first_song, .second_song, .song_block {
 	width: 95%;
 	height: 55px;
@@ -62,16 +64,35 @@ html {
 	font-size: 13px;
 }
 
-.logo_footer {
+/*.logo_footer {
+	display: block;
+	text-align: center; 
 	margin-top: -40px;
-	margin-left: -50%; 
+	margin-left: 50px; 
 	position:absolute;
-	right:100px;	
+	text-align: center;
+	display: block;
+	margin: 2 auto;
+	margin-bottom: 30px;
+	margin-top: 24px;
+	height: 55px;
 }
 
+
 .mail_footer {
+	text-align: center; 
+	display: block;
+	margin: 2 auto;
 	margin-top: 10px;
 	margin-left: -50%; 
 	position:absolute;
-	right:100px;	
+	right:110px;	
+}
+*/
+.link {
+	text-align: center; 	
+}
+
+.logo_green {
+	height: 20px;
 }
