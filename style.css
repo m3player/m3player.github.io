@@ -11,7 +11,8 @@ body {
 }
 
 footer {
-	margin-top: 40px;
+	flex: 0 0 auto;
+	margin-top: auto;
 	flex: 0 0 auto;
 	background-color: #17212b;
 	height: 7rem;
