@@ -61,3 +61,17 @@ html {
 	right: 70px;
 	font-size: 13px;
 }
+
+.logo_footer {
+	margin-top: -40px;
+	margin-left: -50%; 
+	position:absolute;
+	right:100px;	
+}
+
+.mail_footer {
+	margin-top: 10px;
+	margin-left: -50%; 
+	position:absolute;
+	right:100px;	
+}
