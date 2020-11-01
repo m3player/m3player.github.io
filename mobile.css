@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 .first_song, .second_song, .song_block {
 	width: 95%;
 	height: 55px;
@@ -5,7 +9,13 @@
 	margin-left: 1%; 
 	margin-right: 2%;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	word-break: break-all;
+}
+
+.number {
+	overflow-x:hidden;
+	box-sizing: border-box;
 }
 
 .picture {
@@ -15,7 +25,7 @@
 	float: left; *//* Выравнивание по левому краю */
 	position:absolute;
 	/*left:372px;*/
-	right:-0%
+	right:-2%
 }
 
 .align_center{
@@ -25,9 +35,21 @@
 }
 
 .songName {
-
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 60px;
+	margin-top: 35px;
+	position:absolute;
+	/*left: 10%;*/
+	right: -65px;
 }
 
 .artistName {
-
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 40px;
+	margin-top: 65px;
+	position:absolute;
+	left: 6%;
+	right: 70px;
 }

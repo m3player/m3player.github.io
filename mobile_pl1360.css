@@ -1,0 +1,21 @@
+.first_song, .second_song, .song_block {
+	width: 95%;
+	height: 55px;
+	margin-bottom: 12px;
+	margin-left: 1%; 
+	margin-right: 2%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	word-break: break-all;
+}
+
+.picture {
+	border-radius: 5px;
+	height: 55px;
+	/*float: right; 
+	float: left; *//* Выравнивание по левому краю */
+	position:absolute;
+	/*left:372px;*/
+	right:-0%
+}
+
