@@ -10,10 +10,11 @@ body {
 	margin: 0;
 }
 
-footer{
+footer {
+	margin-top: 40px;
 	flex: 0 0 auto;
 	background-color: #17212b;
-	height: 5rem;
+	height: 7rem;
 	padding: 10px 20px;
 	border: none;
 }
@@ -36,6 +37,24 @@ span {
 	height: 55px;
 }
 
+.discription {
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+	margin-left: 25%; 
+	margin-right: 25%;
+}
+
+.discriptionText {
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+	font-family: Montserrat, medium;
+	font-size: 1rem;
+	color: #ffffff;
+}
 
 .top_footer{
 	justify-content: space-around;
@@ -48,7 +67,7 @@ span {
 }
 
 .bot_footer{
-	color: #577288;
+	color: #fff;
 	text-align: center;
 	height: 25%;
 }
@@ -69,8 +88,25 @@ span {
 	box-sizing: border-box;
 	/*padding: 30px 0;*/
 	font-weight: 300;
-	background: linear-gradient(to top, #E9B232, #7D4D20);
+	background: linear-gradient(45deg, #E9B232, #7D4D20); /*цвета градиента, 45 градусов. можно поставить откуда должен идти: to top, to bottom и тд*/
+	background-size: 400% 400%; /*увеличение размера полотна, для того чтобы анимградиент работал*/
+	animation: animGradiation 7s ease infinite; /* включение анимации: идет 7 секунд, бесконенчо;*/
 }
+
+
+/*функция анимированного градиента для первой золотой песни.*/
+@keyframes animGradiation {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
 
 .second_song {
 	width: 50%;
@@ -82,6 +118,7 @@ span {
 	-moz-border-radius: 4px;
 	border-radius: 5px;
 	box-sizing: border-box;
+	color: #fff;
 	/*padding: 30px 0;*/
 	font-weight: 300;
 	/*background: linear-gradient(to top, #6B696A, #D8D8D8);*/
@@ -114,6 +151,7 @@ span {
 	overflow-x:hidden;
 	/*left:1100px;*/
 	right:24%
+	
 }
 
 .artistName {
@@ -154,8 +192,16 @@ span {
 	font-family: 'Montserrat', Black; /* Шрифт с засечками */
     font-style: bold;
     overflow-x:hidden;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
+
+
+/*Градиент не для всего первого блока, а только для firstNumber 1, т.е первый трек*/
+/*.firstNumberGradient {
+	background: linear-gradient(45deg, #E9B232, #7D4D20);	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}*/
 
 
 .live_block:hover{

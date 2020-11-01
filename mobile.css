@@ -13,9 +13,15 @@ html {
 	word-break: break-all;
 }
 
-.number {
+.firstNumber, .number {
 	overflow-x:hidden;
 	box-sizing: border-box;
+	font-size: 32px;
+}
+
+.discription {
+	margin-left: 1%; 
+	margin-right: 2%;
 }
 
 .picture {
@@ -36,12 +42,13 @@ html {
 
 .songName {
 	text-align: center;
-	margin-left: 30px;
+	margin-left: 22px;
 	margin-bottom: 60px;
 	margin-top: 35px;
 	position:absolute;
 	/*left: 10%;*/
 	right: -65px;
+	/*font-size: 16px; 15-17 самый нрм */
 }
 
 .artistName {
@@ -50,6 +57,7 @@ html {
 	margin-bottom: 40px;
 	margin-top: 65px;
 	position:absolute;
-	left: 6%;
+	left: 9%;
 	right: 70px;
+	font-size: 13px;
 }
