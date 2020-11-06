@@ -57,6 +57,45 @@ span {
 	color: #ffffff;
 }
 
+.products {
+	text-align: center;
+	float: center;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.logo_films, .logo_films2, .logo_films3, .logo_films4 {
+	height: 50px;
+	margin-bottom: 12px;
+}
+
+/*
+.logo_films {
+	display: inline;
+	margin: auto;
+	text-align: center;
+	height: 50px;
+	margin-bottom: 12px;
+}
+
+.logo_films2 {
+	display: inline;
+	margin: auto;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.logo_films3 {
+	display: inline;
+	margin: auto;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 12px;
+}*/
+
 .top_footer{
 	justify-content: space-around;
 	height: 75%;

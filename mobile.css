@@ -35,6 +35,12 @@ footer {text-align: center;}
 	/*left:372px;*/
 	right:-2%
 }
+/*
+.logo_films, .logo_films2, .logo_films3 {
+	margin-left: 2px;
+	float: left;
+}*/
+
 
 .align_center{
 	display: flex;
